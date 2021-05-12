@@ -1,0 +1,224 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" >Ohhhh Music.</h1>
+    <p id="description">Thank you, fellow musician, for taking the time to complete this survey</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>What kinds of instruments do you play? (Select all that apply)</p>
+      <label>
+        <input
+          type="checkbox"
+          id="woodwind"
+          name="instrument-family"
+          class="input-checkbox"
+          value="woodwind"
+        />Woodwind</label
+      >
+      <label>
+        <input
+          type="checkbox"
+          id="brass"
+          name="instrument-family"
+          class="input-checkbox"
+          value="brass"
+        />Brass</label
+      >
+      <label>
+        <input
+          type="checkbox"
+          id="voice"
+          name="instrument-family"
+          class="input-checkbox"
+          value="voice"
+        />Voice</label
+      >
+      <label>
+        <input
+          type="checkbox"
+          id="Piano"
+          name="instrument-family"
+          class="input-checkbox"
+          value="piano"
+        />Piano</label
+      >
+      <label>
+        <input
+          type="checkbox"
+          id="strings"
+          name="instrument-family"
+          class="input-checkbox"
+          value="strings"
+        />Strings (with bow)</label
+      >
+      <label>
+        <input
+          type="checkbox"
+          id="guitar"
+          name="instrument-family"
+          class="input-checkbox"
+          value="guitar/bass"
+        />Guitar/Bass</label
+      >
+      <label>
+        <input
+          type="checkbox"
+          id="other"
+          name="instrument-family"
+          class="input-checkbox"
+          value="other"
+        />Other</label
+      >
+    </div>
+    
+    <div class="form-group">
+      <label for="dropdown">What role does your instrument play in your life RIGHT NOW?</label>
+      <select id="dropdown" name="roles" class="form-control" required>
+        <option value="hobby">It's just a hobby of mine</option>
+        <option value="play">I play for a living</option>
+        <option value="gig">I just make a few bucks playing gigs here and there</option>
+        <option value="depression">I tried to play for a living, but failed</option>
+        <option value="past-play">I used to play but don't play anymore</option>
+        <option disabled selected value>Select an option</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Have you gone to music school?</p>
+      <label>
+        <input 
+          type="radio" 
+          id="Yes" 
+          name="musicschool" 
+          value="Yes"
+        />Yes</label
+      >
+      <label>
+        <input
+          type="radio"
+          id="No"
+          name="musicschool"
+          value="No"
+        />No</label
+      >
+      <label>
+        <input
+          type="radio"
+          id="currently-attending"
+          name="musicschool"
+          value=currently-attending
+        />Currently Attending</label
+      >
+      <label>
+        <input
+          type="radio"
+          id="dropout"
+          name="musicschool"
+          value="dropout"
+        />Dropped Out/Didn't Finish</label
+      >
+    </div>
+    
+    <div class="form-group">
+      <p>Have you taken any music lessons in the past?</p>
+      <label>
+        <input
+          type="radio"
+          id="yes"
+          name="lessons"
+          value="yes"
+        />Yes</label
+      >
+      <label>
+        <input
+          type="radio"
+          id="no"
+          name="lessons"
+          value="no"
+        />No</label
+      >
+    </div>
+      
+    <div class="form-group">
+      <p>Would you say you have a good relationship with your instrument?</p>
+      <label>
+        <input
+          type="radio"
+          id="yes"
+          name="relationship"
+          value="yes"
+        />Yes</label
+      >
+      <label>
+        <input
+          type="radio"
+          id="no"
+          name="relationship"
+          value="no"
+        />No</label
+      >
+      <label>
+        <input
+          type="radio"
+          id="complicated"
+          name="relationship"
+          value="complicated"
+        />It's Complicated</label
+      >
+    </div>
+      
+    <div class="form-group">
+      <p>Describe the state of your mental health:</p>
+      <textarea
+        id="mentalhealth"
+        class="input-textarea"
+        name="describe"
+        placeholder="Enter description here..."
+      ></textarea>
+    </div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>      
+  </form>
+</div>
+
